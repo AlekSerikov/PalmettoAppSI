@@ -1,0 +1,17 @@
+server:
+  port: 8003
+
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    #    consumer:
+    #      properties:
+    #        spring.json.trusted.packages: "com.example.client.model.Order"
+#    consumer:
+#      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+#      properties:
+#        spring:
+#          json:
+#            trusted:
+#              packages: com.example.palmetto.entityy

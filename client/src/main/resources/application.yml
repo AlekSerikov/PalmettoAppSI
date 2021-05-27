@@ -1,0 +1,32 @@
+server:
+  port: 8001
+
+spring:
+  datasource:
+    password: 72305
+    url: jdbc:mysql://localhost:3306/palmettodb
+    username: root
+  jpa:
+    #    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: clientGroup
+
+
+#spring:
+#  kafka:
+#    consumer:
+#      bootstrap-servers: kafka1:9092
+#      group-id: group_id
+#      auto-offset-reset: earliest
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#    producer:
+#      bootstrap-servers: kafka1:9092
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.apache.kafka.common.serialization.StringSerializer
